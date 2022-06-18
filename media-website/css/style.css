@@ -1,0 +1,87 @@
+/* All */
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+/* root: */
+
+:root{
+     --font-family:"Source Sans Pro";
+     --height:35px;
+}
+
+/* Upper Header Section */
+
+.con{
+     width: 100%;
+     height: 60px;
+     display: grid;
+     grid-template-columns: 30% 40% 30%;
+     margin:20px 0px 0px 0px;
+}
+.main_icon{
+     display: flex;
+    justify-content: flex-start;
+}
+.sub_icon{
+      width: 40%;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+.main_icon i:first-child{
+      color: blue;
+      font-size: 20px;
+}
+.main_icon i{
+      color: black;
+      font-size: 20px;
+}
+
+.logo{
+     text-align: center;
+}
+.subscribe{
+      display: flex;
+      justify-content: center;
+}
+.subscribe button{ 
+        width: 90px;
+        height: var(--height);
+        border-radius: 23px;
+        background-color: #f25252;
+        border: none;
+        margin: 0px 5px 0px 0px;
+}
+.subscribe button a{
+         color: white;
+         text-decoration: none;
+         font-family: var(--font-family);
+         font-size: 16px;
+}
+.subscribe input[type='text']{
+          width: 160px;
+          height: var(--height);
+          border-radius: 23px;
+          border: none;
+          background-color: rgb(168, 168, 168);
+          color: black;
+          font-family: var(--font-family);
+          font-size: 16px;
+          padding-left: 12px;
+        margin: 0px 5px 0px 0px;
+}
+.subscribe input[type='text']{
+       outline: none;
+}
+.subscribe div{
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: var(--height);
+      border-radius: 30px;
+      background-color:  rgb(168, 168, 168);
+}
