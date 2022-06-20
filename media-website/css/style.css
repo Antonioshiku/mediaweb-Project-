@@ -127,7 +127,11 @@
   justify-content: space-evenly;
   display: none;
 }
-
+@media(max-width:1136px){
+   .drop_down{
+     left: 90px;
+   }
+}
 .drop_down a {
   text-decoration: none;
   color: white;
@@ -137,6 +141,8 @@
 }
 .drop_down a:hover {
   color: white;
+  transform: translateX(-15px);
+  transition: all .5s linear ;
 }
 .show {
   display: flex;
@@ -168,6 +174,11 @@
   height: 200px;
   bottom: 50px;
   left: 70px;
+}
+@media(max-width:450px){
+    .sub_con{
+       margin-left: 20px;
+    }
 }
 .color_over_lay {
   position: absolute;
@@ -297,7 +308,7 @@
   background-color: white;
   z-index: 5;
   overflow: hidden;
-  transform: translateY(-600px);
+  transform: translateY(-700px);
   opacity: 0;
 }
 .phone_size_nav_bar ul {
@@ -337,7 +348,7 @@
   width: 200px;
   height: 160px;
   border-radius: 5px;
-  right: 120px;
+  left: 220px;
   z-index: 3;
   display: flex;
   background-color: #f25252;
@@ -345,7 +356,7 @@
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  transform: translate(0px, -120px);
+  transform: translate(0px, -110px);
   /* display: none; */
   opacity: 0;
 }
@@ -362,7 +373,7 @@
   color: white;
 }
 .show_phone_drop {
-  transform: translate(0px, -50px);
+  transform: translate(0px, -60px);
   transition: all 0.6s ease;
   transform-origin: top;
   opacity: 1;
@@ -377,25 +388,48 @@
   transform: translateY(0px);
   opacity: 1;
   transition: all 0.5s ease;
+  position: absolute;
 }
 .hide_nav_bar {
-  transform: translate(0px, -560px);
+  transform: translate(0px, -710px);
   opacity: 0;
   transition: all 0.5s ease;
 }
 
 /* media query section */
 @media (max-width: 620px) {
+  .sub_con{
+     left: 70px;
+  }
 }
 @media (max-width: 768px) {
+ 
 }
 @media (max-width: 912px) {
   .sub_con {
-    width: 75%;
+    width: 80%;
+    left: 30px;
   }
   .phone_size_main_con {
     display: block;
   }
+  .con{
+     display: none;
+  }
+  .main_con{
+    display: none;
+  }
 }
-@media (max-width: 1026px) {
+@media (max-width: 1036px) {
+  .sub_con{
+     width: 75%;
+  }
+  .nav_bar {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .drop_down{
+     left: 117px;
+  }
 }
+
